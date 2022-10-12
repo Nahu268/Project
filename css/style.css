@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+}
+header{
+    border: 0.1875rem solid black;
+    background-color: violet;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    display: flex;
+}
+li{
+    list-style: none;
+}
+.nav{
+    text-decoration: none;
+    border: 0.1875rem black solid;
+    border-radius: 1.5625rem;
+    background-color: aqua;
+    padding: 0.3125rem;
+     margin: 0px 0.3125rem ;
+}
+.logo{
+    border-radius: 50%;
+}
+
+.redsoc{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+footer{
+    background-color: violet;
+    
+    text-align: center;
+    padding: 1%;
+}
+input{
+    border-radius: 1.25rem;
+    border: 0.125rem solid black;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.formulario{
+    background-color: aqua;
+    border-radius: 0.9375;
+    padding: 1.5625rem;   
+    
+}
+div{
+    margin: 0.1875rem 0px;
+}
+#boton{
+    cursor: pointer;
+}
