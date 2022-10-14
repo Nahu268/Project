@@ -32,7 +32,7 @@ li{
     cursor: pointer;
 }
 .redsoc:hover{
-    color: blue;
+    color: red;
 }
 footer{
     background-color: violet;
