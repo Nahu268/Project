@@ -12,6 +12,9 @@ header{
 ul{
     display: flex;
 }
+a:hover{
+    color: red;
+}
 li{
     list-style: none;
 }
