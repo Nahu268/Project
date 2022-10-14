@@ -24,12 +24,12 @@ li{
     border-radius: 1.5625rem;
     background-color: aqua;
     padding: 0.3125rem;
-     margin: 0px 0.3125rem ;
+    margin: 0px 0.3125rem ;
 }
 .logo{
     border-radius: 50%;
+    height: 100%;
 }
-
 .redsoc{
     text-decoration: none;
     color: white;
@@ -56,11 +56,27 @@ main{
     background-color: aqua;
     border-radius: 0.9375;
     padding: 1.5625rem;   
-    
+}
+h2{
+    margin-bottom: 1rem;
 }
 div{
-    margin: 0.1875rem 0px;
+    margin: 0.5rem 0px;
+}
+.selector{
+    cursor:pointer;
+}
+.botones{
+    display: flex;
+    justify-content: end;
 }
 #boton{
+    margin: 0 0.25rem;
     cursor: pointer;
+}
+.botonenviar:hover{
+    background-color: green;
+}
+.botonborrar:hover{
+    background-color: red;
 }

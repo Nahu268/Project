@@ -13,13 +13,13 @@
     
     <header>
 
-        <span class="logo"> <img src="https://picsum.photos/120/120" alt="imagen"> </span>
+        <img class="logo" src="https://picsum.photos/120/120" alt="imagen">
         <h1>Dog Cat</h1>
         <ul>
             <li><a class="nav" href="#">Inicio</a></li>
             <li><a class="nav" href="#">Productos</a></li>
             <li><a class="nav" href="formulario.html">Contacto</a></li>                    
-            <li><a class="nav" href="adopcion2.html">Adoptá</a></li>
+            <li><a class="nav" href="adopcion2.html">Adopción</a></li>
         </ul>
             
     </header>
@@ -67,7 +67,7 @@
                 <div>
                     <label>
                         Seleccione la especialidad
-                        <select name="selector">
+                        <select name="selector" class="selector">
                             <option value="">--none--</option>
                             <option value="">Castración</option>
                             <option value="">Vacunación</option>
@@ -81,8 +81,10 @@
                 </div>
              
                 <br>
-                <input type="submit" value="Enviar" id="boton">
-                <input type="reset" value="Borrar datos" id="boton">
+                <div class="botones">
+                    <input type="submit" value="Enviar" id="boton" class="botonenviar">
+                    <input type="reset" value="Borrar datos" id="boton" class="botonborrar">
+                </div>
             </form>
        </section>
     </main>
