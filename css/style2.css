@@ -9,119 +9,18 @@ main{
 .titulo > h2{
     text-align: center;
 }
-.tarjetas{
+.tarjetas-grupo{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(360px, 1fr));
     column-gap: 3rem;
     row-gap: 2rem;
 }
-.tarjeta1{
+.tarjeta{
     position: relative;
-    /* grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 6; */
     perspective: 800;
     -webkit-perspective: 800;
 }  
-.tarjeta1:hover .wrap{
-    transform: rotateY(180deg);
-}
-.tarjeta2{
-    position: relative;
-    /* grid-column-start: 4;
-    grid-column-end: 7;
-    grid-row-start: 1;
-    grid-row-end: 6; */
-    perspective: 800;
-    -webkit-perspective: 800;
-} 
-.tarjeta2:hover .wrap{
-    transform: rotateY(180deg);
-}
-.tarjeta3{
-    position: relative;
-    /* grid-column-start: 7;
-    grid-column-end: 10;
-    grid-row-start: 1;
-    grid-row-end: 6; */
-    perspective: 800;
-    -webkit-perspective: 800;
-} 
-.tarjeta3:hover .wrap{
-    transform: rotateY(180deg);
-}
-
-.tarjeta5{
-    position: relative;
-    /* grid-column-start: 13;
-    grid-column-end: 16;
-    grid-row-start: 1;
-    grid-row-end: 6; */
-    perspective: 800;
-    -webkit-perspective: 800;
-} 
-.tarjeta5:hover .wrap{
-    transform: rotateY(180deg);
-}
-.tarjeta6{
-    position: relative;
-    /* grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 6;
-    grid-row-end: 11; */
-    perspective: 800;
-    -webkit-perspective: 800;
-} 
-.tarjeta6:hover .wrap{
-    transform: rotateY(180deg);
-}
-.tarjeta7{
-    position: relative;
-    /* grid-column-start: 4;
-    grid-column-end: 7;
-    grid-row-start: 6;
-    grid-row-end: 11; */
-    perspective: 800;
-    -webkit-perspective: 800;
-} 
-.tarjeta7:hover .wrap{
-    transform: rotateY(180deg);
-}
-.tarjeta8{
-    position: relative;
-    /* grid-column-start: 7;
-    grid-column-end: 10;
-    grid-row-start: 6;
-    grid-row-end: 11; */
-    perspective: 800;
-    -webkit-perspective: 800;
-} 
-.tarjeta8:hover .wrap{
-    transform: rotateY(180deg);
-}
-.tarjeta9{
-    position: relative;
-    /* grid-column-start: 10;
-    grid-column-end: 13;
-    grid-row-start: 6;
-    grid-row-end: 11; */
-    perspective: 800;
-    -webkit-perspective: 800;
-} 
-.tarjeta9:hover .wrap{
-    transform: rotateY(180deg);
-}
-.tarjeta10{
-    position: relative;
-    /* grid-column-start: 13;
-    grid-column-end: 16;
-    grid-row-start: 6;
-    grid-row-end: 11; */
-    perspective: 800;
-    -webkit-perspective: 800;
-} 
-.tarjeta10:hover .wrap{
+.tarjeta:hover .wrap{
     transform: rotateY(180deg);
 }
 .wrap{
@@ -130,7 +29,6 @@ main{
     transform-style: preserve-3d;
     transition: .7s ease;
 }
-
 .foto{
     width: 100%;
     height: 100%;
