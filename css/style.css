@@ -2,8 +2,7 @@
     margin: 0px;
 }
 header{
-    border: 0.1875rem solid black;
-    background-color: violet;
+    background-color: black;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -11,6 +10,12 @@ header{
 }
 ul{
     display: flex;
+}
+a{
+    color: white;
+}
+h1{
+    color: white;
 }
 a:hover{
     color: red;
@@ -22,7 +27,7 @@ li{
     text-decoration: none;
     border: 0.1875rem black solid;
     border-radius: 1.5625rem;
-    background-color: aqua;
+    background-color: blue;
     padding: 0.3125rem;
     margin: 0px 0.3125rem ;
 }
@@ -39,44 +44,106 @@ li{
     color: red;
 }
 footer{
-    background-color: violet;
+    background-color: black;
     text-align: center;
     padding: 1%;
     bottom: 0;
 }
-input{
-    border-radius: 1.25rem;
-    border: 0.125rem solid black;
+footer > p {
+    color: white;
 }
 main{
-    display: flex;
-    justify-content: center;
+    margin: 2rem 0rem;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(3,1fr);
+    column-gap: 2rem;
+    row-gap: 4rem;
+    
 }
-.formulario{
-    background-color: aqua;
-    border-radius: 0.9375;
-    padding: 1.5625rem;   
+.info{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-left: 3rem;
 }
-h2{
+.info > section > h2{
     margin-bottom: 1rem;
 }
-div{
-    margin: 0.5rem 0px;
+.datos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    column-gap: 1rem;
 }
-.selector{
-    cursor:pointer;
+.datos > div > h3{
+    font-size: 1.5rem;
 }
-.botones{
-    display: flex;
-    justify-content: end;
+.datos > div > p{
+    font-size: 1.2rem;
+}
+.mapa{
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-right: 3rem;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+.formulario{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.incisos{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 5rem 5rem 1fr;
+    row-gap: 2rem;
+}
+.incisos > div > label > input{
+    font-size: 1rem;
+    border-radius: 0.375rem;
+} 
+.botones > input{
+    font-size: 1rem;
+}
+.incisos > div > label > select {
+    font-size: 1rem;
+    border-radius: 0.375rem;
+}
+.incisos > div > label > select > option{
+    font-size: 1rem;
+    border-radius: 0.375rem;
+}
+.incisos > div > label > p{
+    font-size: 1.2rem;
+}
+.mensaje{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+#mensajes{
+    border-radius: 0.375rem;
 }
 #boton{
-    margin: 0 0.25rem;
+    border-radius: 0.375rem;
     cursor: pointer;
 }
+.botonenviar{
+    margin-right: 0.5rem;
+}
 .botonenviar:hover{
-    background-color: green;
+    background-color: lightgreen;
 }
 .botonborrar:hover{
-    background-color: red;
+    background-color: lightcoral;
 }

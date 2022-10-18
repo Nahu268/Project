@@ -19,54 +19,92 @@
             <li><a class="nav" href="#">Inicio</a></li>
             <li><a class="nav" href="#">Productos</a></li>
             <li><a class="nav" href="formulario.html">Contacto</a></li>                    
-            <li><a class="nav" href="adopcion2.html">Adopción</a></li>
+            <li><a class="nav" href="adopcion2.html">Adopciones</a></li>
         </ul>
             
     </header>
 
     <main>
+        <article class="info">
+            <section>
+                <h2>Contáctanos</h2>
+            </section>
+            <section class="datos">
+                <div>
+                    <h3>Dirección</h3>
+                    <p>Epecuén 760, Ingeniero Budge, Provincia de Buenos Aires</p>
+                </div>
+                <div>
+                    <h3>Email</h3>
+                    <p>mail@gmail.com</p>
+                </div>
+                <div>
+                    <h3>Telefono</h3>
+                    <p>165135165151 </p>
+                </div>
+                <div>
+                    <h3>Celular</h3>
+                    <p>+54-911-3276-7122</p>
+                </div>
+                <div class="horarios">
+                    <h3>Horarios</h3>
+                    <p>Lunes a Viernes de 8:30 a 19:00</p>
+                    <p>Sabados de 10:00 a 17:00</p>
+                    <p>Domingos cerrado</p>
+                </div>
+            </section>
+        </article>
+        <article class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d523.9096362153688!2d-58.47226339993166!3d-34.732273697225175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccf6c5acdc9b9%3A0xe339fcf8f36ccd8b!2sConsultorio%20veterinario%20La%20Salada!5e0!3m2!1ses!2sar!4v1666038602837!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </article>
+        
        <section class="formulario">
-            <form action="https://formspree.io/f/mpznloqp" method="post">
-
-                <h2>Sacá tu turno</h2>
+        <h2>Sacá tu turno online</h2>
+            <form class="incisos" action="https://formspree.io/f/mpznloqp" method="post">
                 <div>
                     <label>
-                        Nombre:
+                        <p>Nombre:</p>
+                        <br>
                         <input type="text" name="nombre" id="apellido" placeholder="Ingrese su nombre">
                     </label>
                 </div>    
-                <br>
+                
                 <div>
                     <label>
-                        Apellido:
+                        <p>Apellido:</p>
+                        <br>
                         <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido">
                     </label>
                 </div>
-                <br>
+                
                 <div>
                     <label>
-                        DNI:
-                        <input type="text" name="dni" id="dni" placeholder="Ingrese su DNI">
+                        <p>DNI:</p>
+                        <br>
+                        <input type="text" name="dni" id="dni" placeholder="11.222.333">
                     </label>
                 </div>
-                <br>
+                
                 <div>
                     <label>
-                        Telefono:
+                        <p>Telefono:</p>
+                        <br>
                         <input type="text" name="telefono" id="telefono" placeholder="Ingrese su telefono">
                     </label>
                 </div>
-                <br>
+                
                 <div>
                     <label>
-                        Correo Electrónico:
-                        <input type="text" name="mail" id="mail" placeholder="Ingrese su mail">
+                        <p>Correo Electrónico:</p>
+                        <br>
+                        <input type="text" name="mail" id="mail" placeholder="nombre@example.com">
                     </label>
                 </div>
-                <br>
+                
                 <div>
                     <label>
-                        Seleccione la especialidad
+                        <p>Seleccione la especialidad</p>
+                        <br>
                         <select name="selector" class="selector">
                             <option value="">--none--</option>
                             <option value="">Castración</option>
@@ -79,8 +117,15 @@
                         </select>
                     </label>
                 </div>
-             
-                <br>
+                
+                <div class="mensaje">
+                    <label>
+                        <p>Mensaje:</p>
+                        <br>
+                        <textarea name="mensaje" id="mensajes" cols="100" rows="10"></textarea>
+                    </label>
+                </div>
+                
                 <div class="botones">
                     <input type="submit" value="Enviar" id="boton" class="botonenviar">
                     <input type="reset" value="Borrar datos" id="boton" class="botonborrar">
@@ -95,8 +140,8 @@
         <a class="redsoc" href="https://twitter.com" target="_blank"><i class="fa-brands fa-pinterest" aria-hidden="true"></i></a>  
         <a class="redsoc" href="https://twitter.com" target="_blank"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>  
         <a class="redsoc" href="https://twitter.com" target="_blank"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>  
-    
-        <br><p><b>Derechos Reservados @2022</b></p>
+        <br>
+        <p>Derechos Reservados @2022</p>
     </footer>
 
 </body>
