@@ -12,13 +12,15 @@ header{
     padding: 0 0.5rem;
 }
 .logo{
-    border-radius: 50%;
+    border-radius: 90%;
     height: 100%;
-    display: block; 
+    display: block
 }
 .logo > img{
-    border-radius: 50%;
-    height: 100%;
+    border-radius: 90%;
+    margin: 0.2rem 1rem;
+    width: 80px;
+    display: block;
 }
 .titulo{
     display: block;
@@ -56,6 +58,7 @@ footer{
 }
 @media screen and (max-width:640px) {
     header{
+        flex-direction: column;
         justify-content: center;
     }  
     .navbar{
@@ -63,3 +66,10 @@ footer{
     }
 }
 
+@media screen and (max-width:1024px) and (min-width:640px) {
+    header{
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
