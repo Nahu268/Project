@@ -38,6 +38,7 @@ header{
     color: white;
     text-decoration: none;
     margin: 0 0.35rem;
+    font-size: 1.2rem;
 }
 .nav:hover{
     color: red;
@@ -52,6 +53,7 @@ footer{
 .redes{
     color: white;
     cursor: pointer;
+    font-size: 1.5rem;
 }
 .redes:hover{
     color: red;
