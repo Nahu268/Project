@@ -8,9 +8,9 @@ main{
     text-align: center;
     font-size: 2rem;
 }
-.tarjetas-grupo{
+.tarjetas{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(22.5rem, 1fr));
     column-gap: 3rem;
     row-gap: 2rem;
 }
@@ -18,22 +18,21 @@ main{
     position: relative;
     perspective: 800;
     -webkit-perspective: 800;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(22.5rem, 1fr));
+    padding: 2rem;
 }  
 .tarjeta:hover .wrap{
     transform: rotateY(180deg);
 }
 .wrap{
     width: 100%;
-    height: 100%;
+    height:100%;
     transform-style: preserve-3d;
     transition: .7s ease;
+    
 }
-.foto{
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;   
-}
-.info{
+.flip-2{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -41,18 +40,23 @@ main{
     left: 0%;
     transform: rotateY(180deg);
     backface-visibility: hidden;
-    background-color: lightpink;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
-.info >p{
-    text-align: center;
-    background-color: lightpink;
+.flip-1{
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;   
 }
-.info >h2{
-    background-color: lightpink;
+.contenido{
+    width: 100%;
+    height: 100%;
+    margin: 2rem 0;
+}
+.contenido > h2{
+    font-size: 2rem;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 1.8rem;
+}
+.contenido > p{
+    font-size: 1.5rem;
+    text-align: center;
 }
